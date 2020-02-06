@@ -37,12 +37,12 @@ Through data visualization, I found some interesting relationships between users
 
 ## Graph
 
-![TEST](../image/wordcount.png)
-![lenpost](../image/lenpost.png) 
-![textpost](../image/textpost.png) 
-![vocab](../image/vocab.png)
-![comment](../image/comment.png)
-![wordcloud](../image/wordcloud.png)
+![TEST](./image/wordcount.png)
+![lenpost](./image/lenpost.png) 
+![textpost](./image/textpost.png) 
+![vocab](./image/vocab.png)
+![comment](./image/comment.png)
+![wordcloud](./image/wordcloud.png)
 
 # Model
 
@@ -54,19 +54,19 @@ I used "subreddit" in 1 and 0 as y, and "combination", which combined title and 
 
 Using pipeline and GridsearchCV, I chose the beset parameter from the range and train a model based on the best parameter. In the end, I received 0.92 for train accuracy and 0.877 for test accuracy. The model predicted 79% of posts from Enough Trump Spam correctly, and 96% of posts from AskThe_Donald correctly.
 
-![logC](../image/logC.png)
+![logC](./image/logC.png)
 
 ### Model 2: Logistic Regression TFIDFVectorizer
 
 In this model, I used the same parameter as CountVectorizer. By using its best parameter, I received 0.93 for train accuracy and 0.912 for test accuracy. The model predicted 87% of posts from Enough Trump Spam correctly, and 95% of posts from AskThe_Donald correctly.
 
-![logT](../image/logT.png)
+![logT](./image/logT.png)
 
 ### Model 3: Voting Classifier TFIDFVectorizer
 
 I used Adaboost, Gradient Boost, and Random Forest in the Voting Classifier to get the best model with TFIDFVectorizer. I received 0.93 for train acuracy and 0.91 for test accuracy. The model predict 87% of posts from Enough Trump Spam correctly, and 95% of posts from AskThe_Donald correctly.
 
-![vc](../image/vc.png)
+![vc](./image/vc.png)
 
 # Conclusion
 
